@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建筑设计作品集 | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-subtitle">设计是一种生活态度</span>
+                    <span class="logo-name">Designing for life</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#portfolio" class="nav-link">
+                    <span class="nav-text-cn">作品集</span>
+                    <span class="nav-text-en">Portfolio</span>
+                </a></li>
+                <li><a href="#about" class="nav-link">
+                    <span class="nav-text-cn">关于我</span>
+                    <span class="nav-text-en">About</span>
+                </a></li>
+                <li><a href="#contact" class="nav-link">
+                    <span class="nav-text-cn">联系</span>
+                    <span class="nav-text-en">Contact</span>
+                </a></li>
+                <li><a href="#ai-chat" class="nav-link">
+                    <span class="nav-text-cn">AI助手</span>
+                    <span class="nav-text-en">AI Chat</span>
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页/封面 -->
+    <section id="home" class="hero">
+        <!-- 轮播图容器 -->
+        <div class="hero-carousel" id="heroCarousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&h=1080&fit=crop" alt="建筑设计作品1">
+                    <div class="carousel-overlay">
+                        <h3>文化中心设计</h3>
+                        <p>融合传统与现代的空间叙事</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e8be8625?w=1920&h=1080&fit=crop" alt="建筑设计作品2">
+                    <div class="carousel-overlay">
+                        <h3>现代住宅</h3>
+                        <p>可持续性与居住体验的完美平衡</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=1080&fit=crop" alt="建筑设计作品3">
+                    <div class="carousel-overlay">
+                        <h3>城市更新方案</h3>
+                        <p>激活老城区的空间活力</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1920&h=1080&fit=crop" alt="建筑设计作品4">
+                    <div class="carousel-overlay">
+                        <h3>博物馆设计</h3>
+                        <p>空间叙事与文化体验</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 轮播图控制按钮 -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- 轮播图指示器 -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+                <span class="indicator" data-index="3"></span>
+            </div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Juli</h1>
+            <p class="hero-subtitle">建筑设计师 | 探索空间与形式的可能性</p>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>向下滚动</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">作品集</h2>
+            <p class="section-subtitle">探索设计的多维可能性，从建筑空间到产品细节，从平面艺术到创意表达</p>
+            
+            <!-- 作品集分类导航 -->
+            <div class="portfolio-categories">
+                <button class="category-btn active" data-category="all">全部作品</button>
+                <button class="category-btn" data-category="architecture">建筑与设计</button>
+                <button class="category-btn" data-category="furniture">家具与产品设计</button>
+                <button class="category-btn" data-category="graphic">平面与艺术探索</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item architecture" data-project="project1" data-category="architecture">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop" alt="文化中心设计">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="category-tag">建筑与设计</div>
+                        <h3>文化中心设计</h3>
+                        <p>融合传统与现代的空间叙事</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project2">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop" alt="项目2">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>现代住宅</h3>
+                        <p>住宅设计 · 可持续建筑</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project3">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop" alt="项目3">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>城市更新方案</h3>
+                        <p>城市规划 · 社区设计</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project4">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800&h=600&fit=crop" alt="项目4">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>博物馆设计</h3>
+                        <p>文化建筑 · 空间叙事</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project5">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop" alt="项目5">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>商业综合体</h3>
+                        <p>商业建筑 · 功能整合</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-project="project6">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&h=600&fit=crop" alt="项目6">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>校园规划</h3>
+                        <p>教育建筑 · 总体规划</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="webwxgetmsgimg (1).jfif" alt="Juli个人照片">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">关于我</h2>
+                    <p class="about-description">
+                        我是一名充满激情的建筑设计师，专注于探索空间与形式的无限可能性。我相信建筑不仅仅是功能的容器，更是情感和记忆的载体。
+                    </p>
+                    <p class="about-description">
+                        我的设计理念源于对可持续性、人文关怀和空间体验的深度思考。通过参数化设计、材料创新和空间叙事，我致力于创造既美观又实用的建筑作品。
+                    </p>
+                    
+                    <div class="resume-highlights">
+                        <h3>简历亮点</h3>
+                        <div class="highlights-grid">
+                            <div class="highlight-item">
+                                <h4>教育背景</h4>
+                                <p>XX大学 建筑设计专业</p>
+                                <p>2020-2024</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>技能专长</h4>
+                                <p>Rhino, Grasshopper, AutoCAD</p>
+                                <p>SketchUp, Lumion, Photoshop</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>获奖情况</h4>
+                                <p>XX建筑设计竞赛 一等奖</p>
+                                <p>XX大学优秀毕业生</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>实践经历</h4>
+                                <p>XX建筑设计事务所 实习</p>
+                                <p>参与多个实际项目设计</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>其他探索</h4>
+                                <p>家具设计、平面设计</p>
+                                <p>数字艺术创作</p>
+                            </div>
+                        </div>
+                        <a href="#" class="download-cv">下载完整简历</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <span>WeChat: your_wechat</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>+86 138-0000-0000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI对话界面 -->
+    <section id="ai-chat" class="ai-chat">
+        <div class="container">
+            <h2 class="section-title">AI助手</h2>
+            <p class="section-subtitle">与AI助手对话，了解更多关于我的设计理念和作品</p>
+            
+            <div class="chat-container">
+                <!-- 遮罩层 -->
+                <div class="chat-overlay" id="chatOverlay"></div>
+                
+                <!-- 历史记录侧边栏 -->
+                <div class="chat-sidebar" id="chatSidebar">
+                    <div class="sidebar-header">
+                        <h3>对话历史</h3>
+                        <button class="sidebar-toggle" id="sidebarToggle">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="text" class="search-input" id="searchInput" placeholder="搜索对话内容...">
+                    </div>
+                    
+                    <div class="history-list" id="historyList">
+                        <!-- 历史记录将通过JavaScript动态生成 -->
+                    </div>
+                    
+                    <div class="sidebar-footer">
+                        <button class="clear-history" id="clearHistory">
+                            <i class="fas fa-trash"></i>
+                            清空历史
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 主聊天区域 -->
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <button class="history-toggle" id="historyToggle" title="查看对话历史">
+                            <i class="fas fa-history"></i>
+                        </button>
+                        <h3>AI设计师助手</h3>
+                        <button class="new-chat" id="newChat">
+                            <i class="fas fa-plus"></i>
+                            新对话
+                        </button>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message ai-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <p>你好！我是设计师的AI助手，很高兴为你介绍Juli的作品和理念。你可以问我任何关于建筑设计、作品集或者设计师背景的问题。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <input type="text" id="chatInput" placeholder="输入你的问题..." maxlength="500">
+                        <button id="sendMessage" class="send-button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Juli Design 用设计创造无限可能</p>
+                <div class="social-links">
+                    <a href="mailto:your.email@example.com" title="邮箱">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/user/profile/5b754bb5f7e8b97d8557d8cb?xsec_token=YBsJIEVBrDrPciwawOD1HyfE_rQqSqfEkr8fgAwNfj5TI=&xsec_source=app_share&xhsshare=CopyLink&appuid=5b754bb5f7e8b97d8557d8cb&apptime=1756114829&share_id=532fd38b4e98448da149994538e2a1fe" title="小红书" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-book-open"></i>
+                    </a>
+                    <a href="#" title="微信">
+                        <i class="fab fa-weixin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 项目详情模态框 -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="project-gallery">
+                    <div class="gallery-main">
+                        <img id="mainImage" src="" alt="项目图片">
+                    </div>
+                    <div class="gallery-thumbnails" id="galleryThumbnails">
+                        <!-- 缩略图将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h2 id="projectTitle"></h2>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="label">项目类型:</span>
+                            <span id="projectType"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">地点:</span>
+                            <span id="projectLocation"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">时间:</span>
+                            <span id="projectDate"></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">我的角色:</span>
+                            <span id="projectRole"></span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>设计说明</h3>
+                        <p id="projectDescription"></p>
+                    </div>
+                    <div class="project-software">
+                        <h3>使用软件</h3>
+                        <p id="projectSoftware"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
